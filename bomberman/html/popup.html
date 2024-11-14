@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title data-i18n="extName">Bomberman Classic Game</title>
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body style="background-color:#000000">
+    <div id="canvas-container">
+      <center id="table-container" style="display:none">
+        <table class="tg">
+          <colgroup>
+            <col style="width: 114px">
+            <col style="width: 114px">
+            <col style="width: 114px">
+            <col style="width: 114px">
+            <col style="width: 114px">
+            <col style="width: 114px">
+          </colgroup>
+          <tr>
+            <th class="tg-031e">Click to Config</th>
+            <th class="tg-hgcj">UP</th>
+            <th class="tg-hgcj">DOWN</th>
+            <th class="tg-hgcj">LEFT</th>
+            <th class="tg-hgcj">RIGHT</th>
+            <th class="tg-hgcj">BOMB</th>
+            <th class="tg-hgcj">COMPUTER</th>
+          </tr>
+          <tr>
+            <td class="tg-yvvu">White Player</td>
+            <td class="tg-6997"><input type="text" value="UP" onkeydown="ShowKey(0,0,this,event)"></td>
+            <td class="tg-6997"><input type="text" value="DOWN" onkeydown="ShowKey(0,1,this,event)"></td>
+            <td class="tg-6997"><input type="text" value="LEFT" onkeydown="ShowKey(0,2,this,event)"></td>
+            <td class="tg-6997"><input type="text" value="RIGHT" onkeydown="ShowKey(0,3,this,event)"></td>
+            <td class="tg-6997"><input type="text" value="SPACE" onkeydown="ShowKey(0,4,this,event)"></td>
+            <td class="tg-6997"><input type="checkbox" id="player0AI">Enabled <input type="checkbox"
+                id="player0AI_MODE">Plays safe</td>
+          </tr>
+          <tr>
+            <td class="tg-yvvu">Green Player</td>
+            <td class="tg-6997"><input type="text" value="W" onkeydown="ShowKey(1,0,this,event)"></td>
+            <td class="tg-6997"><input type="text" value="S" onkeydown="ShowKey(1,1,this,event)"></td>
+            <td class="tg-6997"><input type="text" value="A" onkeydown="ShowKey(1,2,this,event)"></td>
+            <td class="tg-6997"><input type="text" value="D" onkeydown="ShowKey(1,3,this,event)"></td>
+            <td class="tg-6997"><input type="text" value="F" onkeydown="ShowKey(1,4,this,event)"></td>
+            <td class="tg-6997"><input type="checkbox" id="player1AI" checked="true">Enabled <input type="checkbox"
+                id="player1AI_MODE" checked="true">Plays safe</td>
+          </tr>
+          <tr>
+            <td class="tg-yvvu">Red Player</td>
+            <td class="tg-6997"><input type="text" value="I" onkeydown="ShowKey(2,0,this,event)"></td>
+            <td class="tg-6997"><input type="text" value="K" onkeydown="ShowKey(2,1,this,event)"></td>
+            <td class="tg-6997"><input type="text" value="J" onkeydown="ShowKey(2,2,this,event)"></td>
+            <td class="tg-6997"><input type="text" value="L" onkeydown="ShowKey(2,3,this,event)"></td>
+            <td class="tg-6997"><input type="text" value="H" onkeydown="ShowKey(2,4,this,event)"></td>
+            <td class="tg-6997"><input type="checkbox" id="player2AI" checked="true">Enabled <input type="checkbox"
+                id="player2AI_MODE" checked="true">Plays safe</td>
+          </tr>
+          <tr>
+            <td class="tg-yvvu">Blue Player</td>
+            <td class="tg-6997"><input type="text" value="NUMPAD8" onkeydown="ShowKey(3,0,this,event)"></td>
+            <td class="tg-6997"><input type="text" value="NUMPAD5" onkeydown="ShowKey(3,1,this,event)"></td>
+            <td class="tg-6997"><input type="text" value="NUMPAD4" onkeydown="ShowKey(3,2,this,event)"></td>
+            <td class="tg-6997"><input type="text" value="NUMPAD6" onkeydown="ShowKey(3,3,this,event)"></td>
+            <td class="tg-6997"><input type="text" value="ENTER" onkeydown="ShowKey(3,4,this,event)"></td>
+            <td class="tg-6997"><input type="checkbox" id="player3AI" checked="true">Enabled <input type="checkbox"
+                id="player3AI_MODE" checked="true">Plays safe</td>
+          </tr>
+        </table><br>
+        <h2 style="color:white">Number of players (2-4)</h2><button onclick="MaxP(2)"
+          style="width:100px;">2</button><button onclick="MaxP(3)" style="width:100px;">3</button><button
+          onclick="MaxP(4)" style="width:100px;">4</button>
+      </center><canvas id="ctx"></canvas><!-- style="display:none"--><br>
+      <p style="color:red">HINT: Uncheck "Plays safe" in Controls -> Computer options. This will make bots more
+        aggresive (and dumber)</p>
+      <p style="color:white">R = Restart, P = Pause, C = Controls</p>
+    </div>
+    <script src="../js/popup.js"></script>
+  </body>
+
+</html>

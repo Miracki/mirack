@@ -1,0 +1,65 @@
+#canvas-container {
+  width: 100%;
+  text-align: center
+}
+
+canvas {
+  display: inline;
+  width: 500px
+}
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-color: #ccc;
+  border: none
+}
+
+.tg td {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 0;
+  overflow: hidden;
+  word-break: normal;
+  border-color: #ccc;
+  color: #333;
+  background-color: #fff
+}
+
+.tg th {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 0;
+  overflow: hidden;
+  word-break: normal;
+  border-color: #ccc;
+  color: #333;
+  background-color: #f0f0f0
+}
+
+.tg .tg-hgcj {
+  font-weight: 700;
+  text-align: center
+}
+
+.tg .tg-yvvu {
+  font-weight: 700;
+  background-color: #fff;
+  color: #000;
+  text-align: center
+}
+
+.tg .tg-6997 {
+  background-color: #fff;
+  color: #000;
+  text-align: center
+}
+
+input {
+  text-align: center
+}
